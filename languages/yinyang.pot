@@ -1,0 +1,278 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Project-Id-Version: yinyang\n"
+"POT-Creation-Date: 2018-01-14 23:00+0100\n"
+"PO-Revision-Date: 2018-01-14 23:00+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.3\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: style.css\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: 404.php:17
+msgid "Oops! That page can&rsquo;t be found."
+msgstr ""
+
+#: 404.php:21
+msgid ""
+"It looks like nothing was found at this location. Maybe try one of the links "
+"below or a search?"
+msgstr ""
+
+#: 404.php:30
+msgid "Most Used Categories"
+msgstr ""
+
+#. translators: %1$s: smiley
+#: 404.php:47
+#, php-format
+msgid "Try looking in the monthly archives. %1$s"
+msgstr ""
+
+#: comments.php:22
+msgid "Comments"
+msgstr ""
+
+#. translators: 1: title.
+#: comments.php:38
+#, php-format
+msgctxt "icon"
+msgid "%s One thought"
+msgstr ""
+
+#. translators: 1: comment count number, 2: title.
+#: comments.php:42
+#, php-format
+msgctxt "icon"
+msgid "%2$s %1$s thought"
+msgid_plural "%2$s %1$s thoughts"
+msgstr[0] ""
+msgstr[1] ""
+
+#: comments.php:63
+msgid "Comments are closed."
+msgstr ""
+
+#: functions.php:51 functions.php:188
+msgid "Primary menu"
+msgstr ""
+
+#: functions.php:52
+msgid "Bottom menu"
+msgstr ""
+
+#: functions.php:109
+msgid "Default Header Image"
+msgstr ""
+
+#: functions.php:118
+msgid "Calendar"
+msgstr ""
+
+#: functions.php:121
+msgid "Search"
+msgstr ""
+
+#: functions.php:134
+msgid "Home"
+msgstr ""
+
+#: functions.php:136
+msgid "To show front page, you must set a home page"
+msgstr ""
+
+#: functions.php:140
+msgid "Blog"
+msgstr ""
+
+#: functions.php:146
+msgid "About"
+msgstr ""
+
+#: functions.php:152
+msgid "Contact"
+msgstr ""
+
+#: functions.php:161
+msgctxt "Theme starter content"
+msgid "Home Image"
+msgstr ""
+
+#: functions.php:167
+msgctxt "Theme starter content"
+msgid "Blog Image"
+msgstr ""
+
+#: functions.php:173
+msgctxt "Theme starter content"
+msgid "Contact Image"
+msgstr ""
+
+#: functions.php:179
+msgctxt "Theme starter content"
+msgid "About Image"
+msgstr ""
+
+#: functions.php:231
+msgid "Bar Right"
+msgstr ""
+
+#: functions.php:233 functions.php:244
+msgid "Add widgets here."
+msgstr ""
+
+#: functions.php:242
+msgid "Bar Bottom"
+msgstr ""
+
+#: functions.php:354
+msgid "Read More <span class=\"icon-long_arrow_right\"></span>"
+msgstr ""
+
+#: header.php:26
+msgid "Skip to content"
+msgstr ""
+
+#: inc/customizer/customizer-animations.php:3
+msgid "Theme Animations"
+msgstr ""
+
+#: inc/customizer/customizer-animations.php:5
+msgid "Customize theme animations"
+msgstr ""
+
+#: inc/customizer/customizer-animations.php:15
+msgid "Post Excerpt Lenght"
+msgstr ""
+
+#: inc/customizer/customizer-animations.php:18
+msgid "Set aniation for header title"
+msgstr ""
+
+#. translators: %d is the front page section number
+#: inc/customizer/customizer-front-page.php:18
+#, php-format
+msgid "Front Page Section %d Content"
+msgstr ""
+
+#: inc/customizer/customizer-front-page.php:19
+msgid ""
+"Select pages to feature in each area from the dropdowns. Add an image to a "
+"section by setting a featured image in the page editor. Empty sections will "
+"not be displayed."
+msgstr ""
+
+#: inc/template-functions.php:83
+msgid "Older posts"
+msgstr ""
+
+#: inc/template-functions.php:84
+msgid "Newer posts"
+msgstr ""
+
+#: inc/template-functions.php:85
+msgid "Posts navigation"
+msgstr ""
+
+#. translators: %s: Name of current post
+#: inc/template-tags.php:18
+#, php-format
+msgid "Edit<span class=\"screen-reader-text\"> \"%s\"</span>"
+msgstr ""
+
+#: inc/template-tags.php:30
+msgctxt "list item separator"
+msgid ", "
+msgstr ""
+
+#. translators: 1: list of tags.
+#: inc/template-tags.php:33
+#, php-format
+msgid "Tagged in: %1$s"
+msgstr ""
+
+#: inc/template-tags.php:59
+#, php-format
+msgid "Front Page Section %1$s Placeholder"
+msgstr ""
+
+#. translators: %s: Name of current post. Only visible to screen readers
+#: inc/template-tags.php:68 template-parts/page/content-page.php:35
+#, php-format
+msgid "Edit <span class=\"screen-reader-text\">%s</span>"
+msgstr ""
+
+#. translators: %s: search query.
+#: search.php:21
+#, php-format
+msgid "Search Results for: %s"
+msgstr ""
+
+#: template-parts/page/content-page.php:22
+#: template-parts/page/page-front-page.php:35
+msgid "Pages:"
+msgstr ""
+
+#: template-parts/page/page-front-page.php:31
+#, php-format
+msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
+msgstr ""
+
+#: template-parts/partials/related-posts.php:14
+msgid "Related Posts"
+msgstr ""
+
+#: template-parts/partials/related-posts.php:42
+msgid "Read more"
+msgstr ""
+
+#: template-parts/post/content-none.php:14
+msgid "Oops! Nothing Found"
+msgstr ""
+
+#. translators: 1: link to WP admin new post page.
+#: template-parts/post/content-none.php:26
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: template-parts/post/content-none.php:39
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+
+#: template-parts/post/content-none.php:45
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+
+#. Theme Name of the plugin/theme
+msgid "yinyang"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "White and black theme for wordpress"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "j.rafael simarro"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://juanrafaelsimarro.com"
+msgstr ""
