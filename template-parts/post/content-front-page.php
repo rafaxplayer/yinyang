@@ -13,7 +13,7 @@
 		
 	<header  class="entry-header">
 			
-		<?php the_title('<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">','</a></h2>');?>
+	<h2 class="entry-title"><a href="<?php esc_url( get_permalink() ); ?>" rel="bookmark"><?php  echo wp_trim_words(get_the_title(),3,'...');?></a></h2
 		
 	</header><!-- .entry-header -->
 	

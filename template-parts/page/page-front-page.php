@@ -9,8 +9,6 @@
 
 
 <article id="panel<?php echo $yinyangcounter; ?>" <?php post_class('yinyang-panel '.$class); ?>>
-
-	
 	<div class="panel-content">
 		<header class="entry-header" >
 			<?php if(has_post_thumbnail()):?>
@@ -22,9 +20,7 @@
 			<div class="separator-bis dark">
 				<span class="icon-color-mode"></span>
 			</div>
-			
 		</header><!-- .entry-header -->
-
 		<div class="entry-content">
 			<?php
 				the_content( sprintf(
@@ -40,7 +36,6 @@
 	<?php
 		// Show recent blog posts if is blog posts page (Note that get_option returns a string, so we're casting the result as an int).
 		if ( get_the_ID() === (int) get_option( 'page_for_posts' )  ) : ?>
-
 			<?php // Show four most recent posts.
 				$recent_posts = new WP_Query( array(
 					'posts_per_page'      => 3,
@@ -49,7 +44,6 @@
 					'no_found_rows'       => true,
 				) );
 			?>
-
 			<?php if ( $recent_posts->have_posts() ) : ?>
 				
 				<div class="recent-posts">
@@ -70,8 +64,5 @@
 			</footer><!-- .entry-footer -->
 		<?php endif; ?>
 		</div><!-- .entry-content -->
-
-		
-
 	</div>
 </article><!-- #post-<?php the_ID(); ?> -->

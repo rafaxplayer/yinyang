@@ -12,7 +12,7 @@
  * @package yinyang-theme
  */
 get_header(); ?>
-	<main id="main" class="site-main">
+	<main id="main" class="site-main front-page">
        
         <?php // Show the selected frontpage content.
             if ( have_posts() ) :

@@ -8,7 +8,6 @@
  */
 
 get_header(); ?>
-
 	
 		<main id="main" class="site-main">
 
@@ -21,7 +20,6 @@ get_header(); ?>
 			
 			if('1' === get_option( 'yinyang_show_related_posts', '0' )):
 
-			
 				get_template_part('template-parts/partials/related-posts');
 
 				if(get_the_tags($post->ID)):?>
@@ -40,7 +38,6 @@ get_header(); ?>
 		?>
 
 		</main><!-- #main -->
-	
 
 <?php
 get_template_part( 'template-parts/partials/sidebar', 'side' );

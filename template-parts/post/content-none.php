@@ -8,17 +8,13 @@
  */
 
 ?>
-
 <section class="no-results not-found">
 	<header class="entry-header">
 		<h2 class="entry-title"><?php esc_html_e( 'Oops! Nothing Found', 'yinyang' ); ?></h>
 	</header><!-- .page-header -->
-
 	<div class="page-content">
-		
 		<?php
 		if ( is_home() && current_user_can( 'publish_posts' ) ) : ?>
-
 			<p><?php
 				printf(
 					wp_kses(
@@ -33,19 +29,14 @@
 					esc_url( admin_url( 'post-new.php' ) )
 				);
 			?></p>
-
 		<?php elseif ( is_search() ) : ?>
-
 			<p><?php esc_html_e( 'Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'yinyang' ); ?></p>
 			<?php
 				get_search_form();
-
 		else : ?>
-
 			<p><?php esc_html_e( 'It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help.', 'yinyang' ); ?></p>
 			<?php
 				get_search_form();
-
 		endif; ?>
 	</div><!-- .page-content -->
 </section><!-- .no-results -->

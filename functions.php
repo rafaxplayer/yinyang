@@ -74,7 +74,6 @@ if ( ! function_exists( 'yinyang_setup' ) ){
 			'audio',
 		) );
 
-		
 		// Add theme support for selective refresh for widgets.
 		add_theme_support( 'customize-selective-refresh-widgets' );
 
@@ -109,6 +108,11 @@ if ( ! function_exists( 'yinyang_setup' ) ){
 				'description'   => __( 'Default Header Image', 'yinyang' ),
 			),
 		) );
+
+		add_theme_support(  'custom-background', array(
+			'default-color' => 'fff',
+			'default-image' => '',
+			) );
 
 		add_theme_support('starter-content', [
 
@@ -194,6 +198,7 @@ if ( ! function_exists( 'yinyang_setup' ) ){
 					],
 				],
 			],
+			// Customizer pannels
 			'theme_mods' => array(
 				'panel_1' => '{{myblog}}',
 				'panel_2' => '{{about}}',
@@ -236,7 +241,6 @@ function yinyang_widgets_init() {
 			'before_title'  => '<h2 class="widget-title">',
 			'after_title'   => '</h2>',
 		) );
-		
 	
 		register_sidebar( array(
 			'name'          => esc_html__( 'Bar Bottom', 'yinyang' ),
@@ -248,7 +252,6 @@ function yinyang_widgets_init() {
 			'after_title'   => '</h2>',
 		) );
 	}
-	
 	
 }
 add_action( 'widgets_init', 'yinyang_widgets_init' );
@@ -270,7 +273,7 @@ function yinyang_scripts() {
 	wp_enqueue_style( 'lightbox',  get_template_directory_uri() . '/assets/css/lightbox.min.css' ,array(), '3.2.1','all');
 
 	wp_enqueue_style( 'normalize',  get_template_directory_uri() . '/assets/css/normalize.css' ,array(), '7.0.0','all');
-
+	
 	wp_enqueue_style( 'yinyang-style', get_stylesheet_uri() ,array('normalize'),'1.0','all');
 
 	/* scripts */
