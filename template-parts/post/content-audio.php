@@ -9,15 +9,15 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class(); ?> data-aos="<?php echo get_theme_mod('yinyang_blog_items_animation','fade-up') ?>" data-aos-duration="1200" data-aos-once="true" data-aos-anchor-placement="top-bottom">
 		
-	<header data-aos="<?php echo get_theme_mod('yinyang_blog_items_animation','fade-up') ?>" data-aos-duration="1200" data-aos-once="true" class="entry-header">
+	<header class="entry-header">
 			
 		<?php the_title('<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">','</a></h2>');?>
 		<?php yinyang_get_post_tag(); ?>
 	</header><!-- .entry-header -->
 	
-	<div data-aos="<?php echo get_theme_mod('yinyang_blog_items_animation','fade-up') ?>" data-aos-duration="800" data-aos-once="true" data-aos-anchor-placement="top-bottom" class="entry-content">
+	<div class="entry-content">
 	
 		<div class="date">
 			

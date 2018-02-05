@@ -18,17 +18,8 @@ get_header(); ?>
 			
 			yinyang_get_posts_navigation();
 			
-			if('1' === get_option( 'yinyang_show_related_posts', '0' )):
-
-				get_template_part('template-parts/partials/related-posts');
-
-				if(get_the_tags($post->ID)):?>
-					<div class="tags">
-						<?php the_tags( '<span class="icon-price-tags"></span> ', ' ', '<br>'); ?>
-					</div>
-			<?php endif;
+			do_action( 'yinyang_related_posts' );
 			
-			endif;
 			// If comments are open or we have at least one comment, load up the comment template.
 			if ( comments_open() || get_comments_number()) :
 				comments_template();

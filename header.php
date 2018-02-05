@@ -43,18 +43,18 @@
 			
 			<span class="toggle-button icon-signal"></span>
 		</div><!-- .site-branding -->
-		
-		<nav id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><span class="icon-align_justify"></span></button>
+			<nav id="site-navigation" class="main-navigation">
+				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><span class="icon-align_justify"></span></button>
+							
+				<h1 class="site-title-small"><?php echo wp_trim_words(get_bloginfo( 'name' ), $num_words = 3);?></h1>
+				<?php
+					wp_nav_menu( array(
+						'theme_location' => 'menu-header'
 						
-			<h1 class="site-title-small"><?php echo wp_trim_words(get_bloginfo( 'name' ), $num_words = 3);?></h1>
-			<?php
-				wp_nav_menu( array(
-					'theme_location' => 'menu-header'
-					
-				) );
-			?>
-		</nav><!-- #site-navigation -->
+					) );
+				?>
+			</nav><!-- #site-navigation -->
+		
 	</header><!-- #masthead -->
 	
 	<div id="content" class="site-content">

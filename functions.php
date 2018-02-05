@@ -114,6 +114,14 @@ if ( ! function_exists( 'yinyang_setup' ) ){
 			'default-image' => '',
 			) );
 
+		add_theme_support( 'infinite-scroll', array(
+			'type'           => 'scroll',
+    		'footer_widgets' => false,
+			'container'      => 'main',
+			'wrapper'        => true,
+			'render'         => 'yinyang_infinite_scroll_render',
+			'posts_per_page' => false,
+		));
 		add_theme_support('starter-content', [
 
 			'widgets' => [
@@ -211,6 +219,9 @@ if ( ! function_exists( 'yinyang_setup' ) ){
 }
 add_action( 'after_setup_theme', 'yinyang_setup' );
 
+function yinyang_infinite_scroll_render() {
+	get_template_part( 'loop' );
+}
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
  *
@@ -393,9 +404,8 @@ require get_template_directory() . '/inc/customizer/customizer.php';
 require get_template_directory() . '/inc/options.php';
 
 /**
- * Load Jetpack compatibility file.
+ * hooks.
  */
-if ( defined( 'JETPACK__VERSION' ) ) {
-	require get_template_directory() . '/inc/jetpack.php';
-}
+require get_template_directory() . '/inc/hooks.php';
+
 

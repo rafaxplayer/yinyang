@@ -52,6 +52,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 # Sections
 # Content
 # Article
+# Infinite scroll
 # Footer
 
 
@@ -2095,7 +2096,7 @@ article.post .entry-meta .comments span {
         max-width: 1200px;
     }
     article.post:not(.search-post) .entry-header {
-        margin: 0 0 90px 90px;
+        margin: 0 0 40px 90px;
     }
     article.post .entry-content {
         -webkit-box-orient: horizontal;
@@ -2248,7 +2249,7 @@ article.post .entry-meta .comments span {
         padding: 5px;
         position: absolute;
         left: -25px;
-        top: 30px;
+        top: 130px;
         z-index: 1;
     }
     .single article.post .entry-content .date a {
@@ -2342,6 +2343,23 @@ article.post .entry-meta .comments span {
 
 .related-slider .relatedthumb img {
     max-width: 400px;
+}
+
+
+/*------------------------------------------
+# Infinite scroll
+--------------------------------------------*/
+
+.infinite-scroll .posts-navigation,
+.infinite-scroll.neverending #footer {
+    display: none;
+}
+
+
+/* Shows the footer again in case all posts have been loaded */
+
+.infinity-end.neverending #footer {
+    display: block;
 }
 
 

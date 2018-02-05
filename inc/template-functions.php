@@ -42,11 +42,11 @@ function yinyang_get_thumbnail($post,$size){
 	if(has_post_thumbnail( $post )){
 		echo the_post_thumbnail_url( $size );
 	}else{
-		if('post_thumb'== $size){
+		/* if('post_thumb'== $size){
 			echo get_template_directory_uri().'/assets/images/placeholder-post.jpg';
 		}else{
 			echo get_template_directory_uri().'/assets/images/placeholder.jpg';
-		}
+		} */
 		
 	}
 	
